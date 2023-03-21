@@ -17,6 +17,17 @@ def encode(password):
     # returns new password
     return final_password
 
+def decode(password):
+    new_password = []
+    for num in password:
+        num = int(num)
+        num -= 3d
+        new_password.append(num)
+    final_password = ""
+    for num in new_password:
+        final_password += str(num)
+    return final_password
+
 
 encoded_password = " "
 if __name__ == "__main__":
